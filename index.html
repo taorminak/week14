@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Как тебя зовут?</p>
+    <input id="name" type="text" />
+    <button id="button" onclick="sayHi()">Нажми меня!</button>
+
+    <hr />
+    <div id="result"></div>
+
+    <script>
+      function sayHi() {
+        let name = document.getElementById("name").value;
+        let greeting = "Привет, " + name + "!";
+        document.getElementById("result").innerHTML = greeting;
+      }
+    </script>
+  </body>
+</html>
