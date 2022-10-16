@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Изменение цвета фона по клику мыши</title>
+  </head>
+  <body>
+    <div class="color-panel">
+      <div id="blue" class="panel__element" onclick="changeColorBlue()">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua.
+      </div>
+      <div id="green" class="panel__element" onclick="changeColorGreen()">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua.
+      </div>
+      <div id="purple" class="panel__element" onclick="changeColorPurple()">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua.
+      </div>
+    </div>
+
+    <style>
+      .color-panel {
+        display: flex;
+      }
+
+      .color-panel div {
+        height: 200px;
+        width: 200px;
+        margin: 5px;
+        padding: 10px;
+        background-color: aquamarine;
+      }
+    </style>
+
+    <script>
+      function changeColorBlue() {
+        let element = document.getElementById("blue");
+        element.style.backgroundColor = "blue";
+      }
+      function changeColorGreen() {
+        let element = document.getElementById("green");
+        element.style.backgroundColor = "green";
+      }
+      function changeColorPurple() {
+        let element = document.getElementById("purple");
+        element.style.backgroundColor = "purple";
+      }
+
+      //var colorArray = document.getElementsByClassName('panel__element');
+
+      //colorArray[0].style.backgroundColor = 'red';
+      //colorArray[1].style.backgroundColor = 'green';
+      //colorArray[2].style.backgroundColor = 'blue';
+    </script>
+  </body>
+</html>
